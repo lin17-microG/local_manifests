@@ -15,34 +15,34 @@
   <project path="prebuilts/AuroraStore" name="MSe1969/AuroraStore-prebuilt" revision="master" />
 
   <!-- Patches & root-scripts Directory -->
-  <project path="z_patches" name="lin16-microG/z_patches" />
+  <project path="z_patches" name="lin16-microG/z_patches" revision="lin-17.1-microG" />
   <project path="z_patches/root-scripts" name="lin16-microG/root-scripts" revision="master"/>
 
   <!-- Replaced/enhanced Repositories -->
   <remove-project name="LineageOS/android_frameworks_base" />
-  <project path="frameworks/base" name="lin17-microG/android_frameworks_base" />
+  <project path="frameworks/base" name="lin17-microG/android_frameworks_base" revision="lin-17.1-microG" />
   <!--
   <remove-project name="LineageOS/android_frameworks_native" />
-  <project path="frameworks/native" name="lin16-microG/android_frameworks_native" revision="lin-16.0-microG" />
+  <project path="frameworks/native" name="lin16-microG/android_frameworks_native" revision="lin-17.1-microG" />
   -->
   <remove-project name="LineageOS/android_lineage-sdk" />
-  <project path="lineage-sdk" name="lin17-microG/android_lineage-sdk" />
+  <project path="lineage-sdk" name="lin17-microG/android_lineage-sdk" revision="lin-17.1-microG" />
   <!--
   <remove-project name="LineageOS/android_packages_apps_Dialer" />
-  <project path="packages/apps/Dialer" name="lin16-microG/android_packages_apps_Dialer" revision="lin-16.0-microG" />
+  <project path="packages/apps/Dialer" name="lin16-microG/android_packages_apps_Dialer" revision="lin-17.1-microG" />
   -->
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
-  <project path="packages/apps/LineageParts" name="lin17-microG/android_packages_apps_LineageParts" />
+  <project path="packages/apps/LineageParts" name="lin17-microG/android_packages_apps_LineageParts" revision="lin-17.1-microG" />
   -->
   <remove-project name="LineageOS/android_packages_apps_Settings" />
-  <project path="packages/apps/Settings" name="lin17-microG/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="lin17-microG/android_packages_apps_Settings" revision="lin-17.1-microG" />
   <!--
   <remove-project name="LineageOS/android_system_core" />
-  <project path="system/core" name="lin16-microG/android_system_core" revision="lin-16.0-microG" />
+  <project path="system/core" name="lin16-microG/android_system_core" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_system_sepolicy" />
-  <project path="system/sepolicy" name="lin16-microG/android_system_sepolicy" revision="lin-16.0-microG" />
+  <project path="system/sepolicy" name="lin16-microG/android_system_sepolicy" revision="lin-17.1-microG" />
   -->
   <remove-project name="LineageOS/android_vendor_lineage" />
-  <project path="vendor/lineage" name="lin17-microG/android_vendor_lineage" />
+  <project path="vendor/lineage" name="lin17-microG/android_vendor_lineage" revision="lin-17.1-microG" />
 
 </manifest>
