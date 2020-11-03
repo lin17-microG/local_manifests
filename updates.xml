@@ -39,10 +39,8 @@
   <project path="art" name="lin17-microG/android_art" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="lin17-microG/android_frameworks_base" revision="lin-17.1-microG" />
-  <!--
   <remove-project name="LineageOS/android_frameworks_native" />
-  <project path="frameworks/native" name="lin16-microG/android_frameworks_native" revision="lin-17.1-microG" />
-  -->
+  <project path="frameworks/native" name="lin17-microG/android_frameworks_native" revision="lin-17.1-microG" />
   <remove-project name="platform/libcore" />
   <project path="libcore" name="lin17-microG/android_libcore" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
