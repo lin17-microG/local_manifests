@@ -41,11 +41,11 @@
   <remove-project name="LineageOS/android_art" />
   <project path="art" name="lin17-microG/android_art" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_bionic" />
-  <project path="bionic" name="lin17-microG/android_bionic" />
+  <project path="bionic" name="lin17-microG/android_bionic" revision="lin-17.1-hmalloc" />
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="lin17-microG/android_frameworks_base" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_frameworks_native" />
-  <project path="frameworks/native" name="lin17-microG/android_frameworks_native" revision="lin-17.1-microG" />
+  <project path="frameworks/native" name="lin17-microG/android_frameworks_native" evision="lin-17.1-hmalloc" />
   <remove-project name="platform/libcore" />
   <project path="libcore" name="lin17-microG/android_libcore" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
@@ -55,7 +55,7 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="lin17-microG/android_packages_apps_Settings" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_system_core" />
-  <project path="system/core" name="lin17-microG/android_system_core" revision="lin-17.1-microG" />
+  <project path="system/core" name="lin17-microG/android_system_core" evision="lin-17.1-hmalloc" />
   <remove-project name="LineageOS/android_system_sepolicy" />
   <project path="system/sepolicy" name="lin17-microG/android_system_sepolicy" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_vendor_lineage" />
