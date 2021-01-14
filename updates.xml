@@ -3,9 +3,8 @@
 
   <remote name="Gitlab" fetch="https://gitlab.com" />
 
-  <!-- Static OTA updater resource 
-  <project path="OTA" name="lin17-microG/OTA" revision="changelog" />
-  -->
+  <!-- Static OTA updater resource -->
+  <project path="OTA" name="lin17-microG/OTA" revision="lin-17.1-microG" />
 
   <!-- GrapheneOS' hardened_malloc (forked from GlassROM) -->
   <project path="external/hardened_malloc" name="lin17-microG/hardened_malloc" revision="master" />
