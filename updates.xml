@@ -35,7 +35,7 @@
   <project path="frameworks/base" name="lin17-microG/android_frameworks_base" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_frameworks_native" />
   <project path="frameworks/native" name="lin17-microG/android_frameworks_native" evision="lin-17.1-hmalloc" />
-  <remove-project name="platform/libcore" />
+  <remove-project name="LineageOS/android_libcore" />
   <project path="libcore" name="lin17-microG/android_libcore" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
   <project path="packages/apps/LineageParts" name="lin17-microG/android_packages_apps_LineageParts" revision="lin-17.1-microG" />
