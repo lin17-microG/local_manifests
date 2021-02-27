@@ -35,6 +35,7 @@ After the tree has been synch'ed, enter the below commands to build LineageOS 17
 source build/envsetup.sh
 brunch amami
 ```
+You can also follow the instructions given in below option 2 and execute `./switch_microG default` to checkout the 'lineage-17.1' default branches.
 
 ## Option 2 - build the "hardened microG" variant for any of the above listed devices
 Of course, you can use the below instructions for ANY device, but if you would like to build for any other device, 
@@ -55,16 +56,10 @@ repo sync --no-tags
 Copy and execute the scripts as shown below. 
 
 **IMPORTANT:** `repo sync` performs a checkout without branch (detached state). 
-The below scripts perform a 'real' checkout and would create the branch to be checked out. 
-The first execution of the script WILL issue some error messages, but the 2nd execution should run w/o issues.
-If the 2nd execution still produces error messages, please do the checkout manually for each of the repositories listed in the script.
+The below scripts perform a 'real' checkout and will create the branch to be checked out. 
 ```Shell session
 cp z_patches/croot-scripts/* .
 ./switch_microG.sh reference
-./switch_microG.sh reference
-```
-Afterwards, checkout all necessary branches by executing the below sequence:
-```Shell session
 ./switch_microG.sh default
 ./switch_microG.sh microG
 ./switch_microG.sh hmalloc
@@ -84,9 +79,9 @@ the default location out/ within your build tree).
 - To build using your own signing key (which must be present in `~/.android-certs` !), execute `./build_*device*.sh sign` (e.g. `./build_hotdog.sh sign`)
 - To build the android emulator, execute `./build_emulator.sh test` and to start it, execute `./start_emulator.sh`
 
-### IMPORTANT: Before you do another 'repo sync'
+### IMPORTANT: How to re-synch the build tree
 Always execute `./switch_microG reference`, before you perform another `repo sync` to synchronize your tree.
-Afterwards, checkout the proper branches, as described above.
+After having synchronized (you may have to perform a --force-sync, if further forks have been created), check whether the switch script has been updated in directory `z_patches/croot-scripts` and copy it into the 'root' of your build tree. Afterwards, switch to the specific build variant. 
 
 
 
