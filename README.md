@@ -68,19 +68,19 @@ cp z_patches/croot-scripts/* .
 
 ### Step 3 - Adapt your preferences
 If you want to **sign** your build with your own signing keys, make sure that the directoty `~/.android-certs` exists and contains your signing keys.
-You have in the 'root' of your build tree a collection of shell scripts of the type build_<devicename>.sh, e.g. build_hotdog.sh for the hotdog device.
+You have in the 'root' of your build tree a collection of shell scripts of the type build_*devicename*.sh, e.g. build_hotdog.sh for the hotdog device.
 Edit the script of your choice to define your own ccache directory and (optionally) your build output directory (comment out, if you would like to use 
-the default location out/ within your build tree).
+the default location `out/` within your build tree).
 
 ### Step 4 - Checkout the correct branches and build
-- For the devices amami, h850, osprey and the android emulator, execute the checkout script as follows: `./switch_microG microG`.
-- For the devices hotdog and oneplus3, do `./switch_microG hmalloc`
+- For the devices amami, h850, osprey and the android emulator, execute the checkout script as follows: `./switch_microG.sh microG`.
+- For the devices hotdog and oneplus3, do `./switch_microG.sh hmalloc`
 - To build without signing (to be more precise: sign with the publicly known test keys), execute `./build_*device*.sh test` (e.g. `./build_hotdog.sh test`)
 - To build using your own signing key (which must be present in `~/.android-certs` !), execute `./build_*device*.sh sign` (e.g. `./build_hotdog.sh sign`)
 - To build the android emulator, execute `./build_emulator.sh test` and to start it, execute `./start_emulator.sh`
 
 ### IMPORTANT: How to re-synch the build tree
-Always execute `./switch_microG reference`, before you perform another `repo sync` to synchronize your tree.
+Always execute `./switch_microG.sh reference`, before you perform another `repo sync` to synchronize your tree.
 After having synchronized (you may have to perform a --force-sync, if further forks have been created), check whether the switch script has been updated in directory `z_patches/croot-scripts` and copy it into the 'root' of your build tree. Afterwards, switch to the specific build variant. 
 
 
