@@ -45,6 +45,8 @@
   <project path="packages/apps/Nfc" name="lin17-microG/android_packages_apps_Nfc" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="lin17-microG/android_packages_apps_Settings" revision="lin-17.1-microG" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+  <project path="packages/apps/Trebuchet" name="lin17-microG/android_packages_apps_Trebuchet" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_system_core" />
   <project path="system/core" name="lin17-microG/android_system_core" evision="lin-17.1-hmalloc" />
   <remove-project name="LineageOS/android_system_sepolicy" />
