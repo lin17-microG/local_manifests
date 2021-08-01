@@ -35,6 +35,8 @@
   <project path="frameworks/base" name="lin17-microG/android_frameworks_base" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_frameworks_native" />
   <project path="frameworks/native" name="lin17-microG/android_frameworks_native" evision="lin-17.1-hmalloc" />
+  <remove-project name="LineageOS/android_frameworks_opt_net_wifi" />
+  <project path="frameworks/opt/net/wifi" name="lin17-microG/android_frameworks_opt_net_wifi" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_libcore" />
   <project path="libcore" name="lin17-microG/android_libcore" revision="lin-17.1-microG" />
   <remove-project name="LineageOS/android_packages_apps_Bluetooth" />
