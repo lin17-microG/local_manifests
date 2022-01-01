@@ -1,3 +1,4 @@
+Deprecated - please see https://github.com/lin18-microG
 # How to build
 General assumption is, that you are familiar with building ROMs and how to use git etc.
 The [LineageOS build instructions (example: hotdog device)](https://wiki.lineageos.org/devices/hotdog/build) should provide you with needed additional informations. 
@@ -26,8 +27,8 @@ So you have two options:
 ## Option 1 - build standard LineageOS 17.1 for the amami device
 Continue as outlined below after having initialized the build tree
 ```Shell session
-curl https://raw.githubusercontent.com/lin17-microG/local_manifests/lineage-17.1/setup_common.xml > .repo/setup_common.xml
-curl https://raw.githubusercontent.com/lin17-microG/local_manifests/lineage-17.1/setup_sony.xml > .repo/setup_sony.xml
+curl https://raw.githubusercontent.com/lin17-microG/local_manifests/lineage-17.1/setup_common.xml > .repo/local_manifests/setup_common.xml
+curl https://raw.githubusercontent.com/lin17-microG/local_manifests/lineage-17.1/setup_sony.xml > .repo/local_manifests/setup_sony.xml
 repo sync --no-tags
 ```
 After the tree has been synch'ed, enter the below commands to build LineageOS 17.1 for the amami device:
